@@ -262,3 +262,8 @@ call  → NOW + individual arguments
 apply → NOW + array arguments
 bind  → LATER + returns function
 ```
+
+### Map, Filter and Reduce
+Interview Answer
+
+“map() is used to transform every element and returns a new array. filter() is used to select elements based on a condition and returns a new array. reduce() is used to accumulate array elements into a single result such as a sum, object, or another value.”
