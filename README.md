@@ -130,4 +130,135 @@ With debounce:
 
 
 ### call(), apply() and bind()
-call() and apply() both invoke a function immediately with a specified this value. The difference is that call() accepts arguments individually, while apply() accepts them as an array. bind() does not execute the function immediately; it returns a new function with this bound to the specified object
+
+## Why are they used?
+
+`call()`, `apply()`, and `bind()` are used to **explicitly control the `this` value** of a function.
+
+---
+
+## 1. call()
+
+`call()` **immediately executes** the function with a specified `this`.
+
+Arguments are passed **individually**.
+
+```js
+function greet(city, age) {
+  console.log(this.name, city, age);
+}
+
+const user = {
+  name: "Ayush"
+};
+
+greet.call(user, "Mumbai", 26);
+```
+
+### Remember
+
+**call = Call now + arguments individually**
+
+---
+
+## 2. apply()
+
+`apply()` also **immediately executes** the function with a specified `this`.
+
+Arguments are passed as an **array**.
+
+```js
+function greet(city, age) {
+  console.log(this.name, city, age);
+}
+
+const user = {
+  name: "Ayush"
+};
+
+greet.apply(user, ["Mumbai", 26]);
+```
+
+### Remember
+
+**apply = Call now + arguments as Array**
+
+---
+
+## 3. bind()
+
+`bind()` **does not execute the function immediately**.
+
+It returns a **new function** with `this` permanently bound to the specified object.
+
+```js
+function greet(city) {
+  console.log(this.name, city);
+}
+
+const user = {
+  name: "Ayush"
+};
+
+const newGreet = greet.bind(user, "Mumbai");
+
+newGreet();
+```
+
+### Remember
+
+**bind = Bind now + execute later**
+
+---
+
+## Difference
+
+| Method    | Executes immediately? | Arguments                |
+| --------- | --------------------- | ------------------------ |
+| `call()`  | ✅ Yes                 | Individually             |
+| `apply()` | ✅ Yes                 | Array                    |
+| `bind()`  | ❌ No                  | Individually / partially |
+
+---
+
+## Common Use Case: Function Borrowing
+
+One object can use another object's method:
+
+```js
+const person1 = {
+  name: "Ayush",
+
+  greet() {
+    console.log(this.name);
+  }
+};
+
+const person2 = {
+  name: "Rahul"
+};
+
+person1.greet.call(person2);
+```
+
+Output:
+
+```text
+Rahul
+```
+
+Here, `person2` **borrows** the `greet()` method from `person1`.
+
+---
+
+## Interview Answer
+
+> **“`call()`, `apply()`, and `bind()` are used to explicitly control the `this` value of a function. `call()` and `apply()` execute the function immediately, while `bind()` returns a new function for later execution. The difference between `call()` and `apply()` is that `call()` accepts arguments individually, whereas `apply()` accepts them as an array.”**
+
+## 🧠 Quick Memory
+
+```text
+call  → NOW + individual arguments
+apply → NOW + array arguments
+bind  → LATER + returns function
+```
