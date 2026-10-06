@@ -127,3 +127,7 @@ With debounce:
 ## Remember
 
 **Debounce → User stops → Wait → Execute**
+
+
+### call(), apply() and bind()
+call() and apply() both invoke a function immediately with a specified this value. The difference is that call() accepts arguments individually, while apply() accepts them as an array. bind() does not execute the function immediately; it returns a new function with this bound to the specified object
