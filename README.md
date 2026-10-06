@@ -267,3 +267,107 @@ bind  → LATER + returns function
 Interview Answer
 
 “map() is used to transform every element and returns a new array. filter() is used to select elements based on a condition and returns a new array. reduce() is used to accumulate array elements into a single result such as a sum, object, or another value.”
+
+
+### Currying
+# Currying in JavaScript
+
+## What is Currying?
+
+**Currying** ka matlab hai ek function jo **multiple arguments ek saath leta hai**, usko aise **functions ki chain** mein convert karna jahan har function **ek-ek argument leta hai**.
+
+> **Multiple arguments → One-by-one functions**
+
+---
+
+## Normal Function
+
+```js
+function add(a, b, c) {
+  return a + b + c;
+}
+
+add(1, 2, 3); // 6
+```
+
+## Curried Function
+
+```js
+function add(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    };
+  };
+}
+
+add(1)(2)(3); // 6
+```
+
+### Arrow Function
+
+```js
+const add = a => b => c => a + b + c;
+
+add(1)(2)(3); // 6
+```
+
+---
+
+## How It Works
+
+```text
+add(1)
+   ↓
+returns function(b)
+
+(2)
+   ↓
+returns function(c)
+
+(3)
+   ↓
+returns result
+
+1 + 2 + 3 = 6
+```
+
+---
+
+## Why Use Currying?
+
+* Function reuse
+* Partial application
+* Create specialized functions
+* Useful in functional programming
+
+### Example
+
+```js
+const multiply = a => b => a * b;
+
+const double = multiply(2);
+const triple = multiply(3);
+
+double(5); // 10
+triple(5); // 15
+```
+
+Here:
+
+```text
+multiply(2) → creates double function
+multiply(3) → creates triple function
+```
+
+---
+
+## 🧠 Remember
+
+> **Currying = Ek function ko one-argument functions ki chain mein convert karna.**
+
+## Interview Answer
+
+> **“Currying is a technique of converting a function that takes multiple arguments into a sequence of functions, where each function takes one argument and returns another function until all arguments are provided.”**
+
+
