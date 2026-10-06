@@ -34,5 +34,9 @@ const c = 10;
 `const` objects/arrays can still be modified. The variable itself cannot be reassigned.
 
 
-## closure
-- A closure is created when an inner function remembers and can access variables from its outer lexical scope even after the outer function has finished execution.
+## Hoisting
+- It is Js behaviour where variables and function are move up to their top of code base,
+
+  ##Debounce
+  - Debouncing is a technique where we delay function execution until the user stops triggering an event for a specific amount of time.
+ 
