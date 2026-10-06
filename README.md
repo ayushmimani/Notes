@@ -32,3 +32,7 @@ const c = 10;
 ### Interview Trap
 
 `const` objects/arrays can still be modified. The variable itself cannot be reassigned.
+
+
+## closure
+- A closure is created when an inner function remembers and can access variables from its outer lexical scope even after the outer function has finished execution.
