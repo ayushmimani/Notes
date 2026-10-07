@@ -373,4 +373,6 @@ multiply(3) → creates triple function
 ### CORS
 - CORS is a browser security mechanism that controls whether a web application from one origin can access resources from another origin.
 
+### Bundler
 
+A bundler is a build tool that analyzes an application's modules and dependencies, processes them, and generates optimized files that can be efficiently loaded by the browser.
