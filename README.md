@@ -379,3 +379,6 @@ A bundler is a build tool that analyzes an application's modules and dependencie
 
 ### package.json and package.lock.json
 - package.json tells npm what dependencies and project configuration we need, while package-lock.json records the exact dependency versions and dependency tree so that installations remain consistent across different environments
+
+### Tree Shaking
+- Tree shaking is the process of removing unused code from the final bundle to reduce its size and improve performance.
