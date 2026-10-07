@@ -382,6 +382,9 @@ A bundler is a build tool that analyzes an application's modules and dependencie
 
 ### JSX
 - JSX is a JavaScript syntax extension that allows us to write HTML-like code inside JavaScript to describe the UI in React.
+
+### Hooks
+Hooks are built-in functions in React that allow functional components to use React features such as state, lifecycle-related behavior, and context without writing class components.
 ### Tree Shaking
 - Tree shaking is the process of removing unused code from the final bundle to reduce its size and improve performance.
 
