@@ -376,3 +376,6 @@ multiply(3) → creates triple function
 ### Bundler
 
 A bundler is a build tool that analyzes an application's modules and dependencies, processes them, and generates optimized files that can be efficiently loaded by the browser.
+
+### package.json and package.lock.json
+- package.json tells npm what dependencies and project configuration we need, while package-lock.json records the exact dependency versions and dependency tree so that installations remain consistent across different environments
