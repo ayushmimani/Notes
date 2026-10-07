@@ -370,4 +370,7 @@ multiply(3) → creates triple function
 
 > **“Currying is a technique of converting a function that takes multiple arguments into a sequence of functions, where each function takes one argument and returns another function until all arguments are provided.”**
 
+### CORS
+- CORS is a browser security mechanism that controls whether a web application from one origin can access resources from another origin.
+
 
