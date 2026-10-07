@@ -380,5 +380,11 @@ A bundler is a build tool that analyzes an application's modules and dependencie
 ### package.json and package.lock.json
 - package.json tells npm what dependencies and project configuration we need, while package-lock.json records the exact dependency versions and dependency tree so that installations remain consistent across different environments
 
+### JSX
+- JSX is a JavaScript syntax extension that allows us to write HTML-like code inside JavaScript to describe the UI in React.
 ### Tree Shaking
 - Tree shaking is the process of removing unused code from the final bundle to reduce its size and improve performance.
+
+### Epxport/import Defultvs Names
+- Named export is used when we want to export multiple values from a file. While importing, we use curly braces, and the name should match the exported name.
+- Default export is used when a file exports one main value. While importing, we don't use curly braces, and we can give the import any name.
