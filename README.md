@@ -400,8 +400,12 @@ Hooks are built-in functions in React that allow functional components to use Re
 - Declarative rendering: "We tell React what the UI should look like, and React handles the necessary DOM updates."
 
 ## UseEffect Vs UseLayoutEffect
--useEffect runs after rendering and is generally used for side effects like API calls and event listeners.
+- useEffect runs after rendering and is generally used for side effects like API calls and event listeners.
 
--useLayoutEffect runs before the browser paints the screen. It is used when we need to measure or update the DOM layout before the user sees it.
+- useLayoutEffect runs before the browser paints the screen. It is used when we need to measure or update the DOM layout before the user sees it.
 
----We should prefer useEffect in most cases because useLayoutEffect can block the browser from painting.
+--- We should prefer useEffect in most cases because useLayoutEffect can block the browser from painting.
+
+# What is the purpose of callback function argument format of
+setState() in React and when should it be used?
+- The callback function format is used when the new state depends on the previous state. React passes the previous state to the function, helping us calculate the correct next state even when multiple updates are batched.
