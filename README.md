@@ -395,6 +395,13 @@ Hooks are built-in functions in React that allow functional components to use Re
 - Default export is used when a file exports one main value. While importing, we don't use curly braces, and we can give the import any name.
 
 
---REACT
+##REACT
 - Immutability: "We don't modify the existing state directly. We create a new object or array to make state updates predictable and help React detect changes."
 - Declarative rendering: "We tell React what the UI should look like, and React handles the necessary DOM updates."
+
+## UseEffect Vs UseLayoutEffect
+-useEffect runs after rendering and is generally used for side effects like API calls and event listeners.
+
+-useLayoutEffect runs before the browser paints the screen. It is used when we need to measure or update the DOM layout before the user sees it.
+
+---We should prefer useEffect in most cases because useLayoutEffect can block the browser from painting.
