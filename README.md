@@ -385,9 +385,16 @@ A bundler is a build tool that analyzes an application's modules and dependencie
 
 ### Hooks
 Hooks are built-in functions in React that allow functional components to use React features such as state, lifecycle-related behavior, and context without writing class components.
+
+
 ### Tree Shaking
 - Tree shaking is the process of removing unused code from the final bundle to reduce its size and improve performance.
 
 ### Epxport/import Defultvs Names
 - Named export is used when we want to export multiple values from a file. While importing, we use curly braces, and the name should match the exported name.
 - Default export is used when a file exports one main value. While importing, we don't use curly braces, and we can give the import any name.
+
+
+--REACT
+- Immutability: "We don't modify the existing state directly. We create a new object or array to make state updates predictable and help React detect changes."
+- Declarative rendering: "We tell React what the UI should look like, and React handles the necessary DOM updates."
