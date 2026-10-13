@@ -409,3 +409,8 @@ Hooks are built-in functions in React that allow functional components to use Re
 # What is the purpose of callback function argument format of
 setState() in React and when should it be used?
 - The callback function format is used when the new state depends on the previous state. React passes the previous state to the function, helping us calculate the correct next state even when multiple updates are batched.
+
+# useeffect
+- A stale closure occurs when a function captures an outdated value of state or props from an earlier render and continues to use that value.
+
+- We can fix it by including all required reactive values in the dependency array. In some cases, we can use functional state updates or refs to access the latest value.
