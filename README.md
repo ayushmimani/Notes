@@ -414,3 +414,8 @@ setState() in React and when should it be used?
 - A stale closure occurs when a function captures an outdated value of state or props from an earlier render and continues to use that value.
 
 - We can fix it by including all required reactive values in the dependency array. In some cases, we can use functional state updates or refs to access the latest value.
+
+
+# Hyderation
+
+- Hydration in React is the process of attaching React's event handlers and connecting the component tree to HTML that was already rendered on the server. It makes the server-rendered page interactive without needing to recreate the entire HTML from scratch. If the server HTML and initial client render differ, hydration mismatch errors can occur
