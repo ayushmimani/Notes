@@ -128,6 +128,8 @@ With debounce:
 
 **Debounce → User stops → Wait → Execute**
 
+## Throttling
+-Throttling is a technique to limit how often an operation can be executed in a given time period. On the backend, it controls the number of API requests per user or IP to prevent overload and abuse. On the frontend, it ensures a function like a scroll handler runs at most once per fixed interval, improving performance."
 
 ### call(), apply() and bind()
 
