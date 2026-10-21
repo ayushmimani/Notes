@@ -1,4 +1,4 @@
-## `var` vs `let` vs `const`
+<img width="1153" height="494" alt="image" src="https://github.com/user-attachments/assets/17fcb4c4-dbf5-41d5-bd50-9c7ab08513c2" />## `var` vs `let` vs `const`
 
 | Feature                   | `var`    | `let` | `const` |
 | ------------------------- | -------- | ----- | ------- |
@@ -416,6 +416,12 @@ setState() in React and when should it be used?
 - A stale closure occurs when a function captures an outdated value of state or props from an earlier render and continues to use that value.
 
 - We can fix it by including all required reactive values in the dependency array. In some cases, we can use functional state updates or refs to access the latest value.
+
+
+## react code
+//React frontend consumes the API and displays the users in a list. Include basic error handling, loading
+//APIURL: https://jsonplaceholder.typicode.com/users
+
 
 
 # Hyderation
