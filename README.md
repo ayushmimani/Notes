@@ -1,4 +1,4 @@
-<img width="1153" height="494" alt="image" src="https://github.com/user-attachments/assets/17fcb4c4-dbf5-41d5-bd50-9c7ab08513c2" />## `var` vs `let` vs `const`
+## `var` vs `let` vs `const`
 
 | Feature                   | `var`    | `let` | `const` |
 | ------------------------- | -------- | ----- | ------- |
