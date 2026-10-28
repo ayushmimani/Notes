@@ -422,6 +422,8 @@ setState() in React and when should it be used?
 //React frontend consumes the API and displays the users in a list. Include basic error handling, loading
 //APIURL: https://jsonplaceholder.typicode.com/users
 
+## What is Reconciliation?
+Reconciliation is the process React uses to compare the previous and new rendered element trees and determine what needs to change in the UI.
 
 
 # Hyderation
