@@ -423,9 +423,11 @@ setState() in React and when should it be used?
 //APIURL: https://jsonplaceholder.typicode.com/users
 
 ## What is Reconciliation?
-Reconciliation is the process React uses to compare the previous and new rendered element trees and determine what needs to change in the UI.
+- Reconciliation is the process React uses to compare the previous and new rendered element trees and determine what needs to change in the UI.
 
-
-# Hyderation
+## what is virtual dom ?
+- Virtual DOM is a lightweight, in-memory representation of the actual DOM that React uses to determine which UI updates are needed.
+- 
+## Hyderation
 
 - Hydration in React is the process of attaching React's event handlers and connecting the component tree to HTML that was already rendered on the server. It makes the server-rendered page interactive without needing to recreate the entire HTML from scratch. If the server HTML and initial client render differ, hydration mismatch errors can occur
